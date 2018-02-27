@@ -1,5 +1,12 @@
-<ul *ngFor = "let grocery of groceries">
-    <li>Item: {{grocery.name}} </li>
-    <li>Price: {{grocery.price}}</li>
-    <li>Quantity: {{grocery.quantity}}</li>
-</ul>
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Price</th>
+    <th>Quantity</th>
+  </tr>
+  <tr *ngFor = "let grocery of groceries">
+    <td>{{grocery.name}}</td>
+    <td>{{grocery.price}}</td>
+    <td>{{grocery.quantity}}</td>
+  </tr>
+  
