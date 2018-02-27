@@ -1,3 +1,5 @@
-<ul>
-    <li *ngFor = "let grocery of _groceryService.groceries">{{grocery}} </li>
+<ul *ngFor = "let grocery of groceries">
+    <li>Item: {{grocery.name}} </li>
+    <li>Price: {{grocery.price}}</li>
+    <li>Quantity: {{grocery.quantity}}</li>
 </ul>
